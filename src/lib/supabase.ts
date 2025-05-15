@@ -5,8 +5,10 @@ import type { Match, Favorite, Notification } from '../types';
 // In a production app, these would be environment variables
 const supabaseUrl = 'https://mjtpiwbhihfvbtybgqul.supabase.co';
 const supabaseAnonKey = 'process.env.SUPABASE_KEY';
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Export the Supabase client instance
+export { supabase };
 
 // Auth functions
 export const signUp = async (email: string, password: string) => {
