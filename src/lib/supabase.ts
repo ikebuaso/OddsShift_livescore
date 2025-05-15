@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Match, Favorite, Notification } from '../types';
-
+import { createClient } from '@supabase/supabase-js';
 // Initialize Supabase client
 // In a production app, these would be environment variables
 const supabaseUrl = 'https://mjtpiwbhihfvbtybgqul.supabase.co';
