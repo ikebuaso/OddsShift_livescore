@@ -9,7 +9,6 @@ import MyTeams from './components/MyTeams';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-background">
         <Navbar />
         <main className="container mx-auto px-4 py-8">
           <Routes>
@@ -19,7 +18,6 @@ function App() {
             <Route path="/my-teams" element={<MyTeams />} />
           </Routes>
         </main>
-      </div>
     </Router>
   );
 }
