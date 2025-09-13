@@ -10,14 +10,12 @@ function App() {
   return (
     <Router>
         <Navbar />
-        <main className="container mx-auto px-4 py-8">
           <Routes>
             <Route path="/" element={<MatchList />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/my-teams" element={<MyTeams />} />
           </Routes>
-        </main>
     </Router>
   );
 }
